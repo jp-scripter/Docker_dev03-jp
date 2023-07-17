@@ -2,10 +2,13 @@ FROM ubuntu:20.04
                                                                            
 RUN  useradd - s /bin/bash -g root  -G sudo -u 1001 nimda -d /home/nimda -rm 
 RUN  groupadd -g 1001 nimda 
-RUN  echo 'nimda:formR!1234'  | chpasswd 
+RUN  echo 'nimda:formR!2345'  | chpasswd 
 
-RUN  useradd  -s /bin/bash -g nimda -G sudo -u 1002 robin -d /home/robin -rm   
-RUN  echo 'robin:fmr.ram231'  | chpasswd  
+RUN  useradd  -s /bin/bash -g nimda -G sudo -u 1002 bruce -d /home/bruce -rm   
+RUN  echo 'bruce:formR!2345'  | chpasswd 
+
+RUN  useradd  -s /bin/bash -g nimda -G sudo -u 1003 robin -d /home/robin -rm   
+RUN  echo 'robin:fmr.ram231'  | chpasswd 
 
 RUN  mkdir         "/workspaces"
 RUN  chown nimda   "/workspaces" 
