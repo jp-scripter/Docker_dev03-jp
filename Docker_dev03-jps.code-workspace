@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+//    "remote.SSH.configFile": "C:/WEBs/8020/VMs/et218t/webs/nodeapps/Docker_/dev03-docker/._2/.ssh/config-dkr.ssh",
+//    "remote.SSH.configFile": "{workspacePath}/._2/.ssh/config-dkr.ssh",
+//    "remote.SSH.configFile": "{workspace}/._2/.ssh/config-dkr.ssh",
+      "remote.SSH.defaultForwardedPorts": [ ],
+       }
+}
