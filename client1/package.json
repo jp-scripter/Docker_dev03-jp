@@ -1,0 +1,29 @@
+{
+  "name": "formr-apps",
+  "description": "Installs client modules for developing apps with HTML and React",
+  "version": "0.01.010",
+  "author": "Bruce Troutman",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "history": "5.0",
+    "nodemon": "^3.0.1",
+    "serve": "^13.0.2"
+  },
+  "scripts": {
+    "start": "echo npm ERROR: * You must be in an app folder to start app",
+    "test": "echo npm TEST error: No test specified && exit 1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
