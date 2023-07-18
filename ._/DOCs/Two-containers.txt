@@ -1,0 +1,232 @@
+javascript-node:0-18-bullseye   dazzling_banzai    exited    dev02-sue                 CODESPACES_DEV02-SUE (WORKSPACE) [CONTAINER MCR.MICROSOFT.COM/CONTAINERS/JAVASCRIPT-NODE:0-18-BULLSEYE (DAZZLING-BANZAI) @ DESKTOP-LINUX)
+javascript-node:0-18-bullseye   vigorous_bose      running   vscode-remote-try-node    VSCODE-REMOTE-TRY-NODE (DEV CONTAINER: NODE.JS @ DESKTOP-LINUX)
+
+docker-compose up --build --force-recreate dazzling_banzai 
+
+	   "forwardPorts": [
+		{
+		  "hostPort": 3021,
+		  "containerPort": 3000
+		}
+	  ],
+
+
+Javascript-node:0-18-bookworm   confident_jones    exited.   Codespace_dev01-sue
+
+ [438 ms] Dev Containers 0.295.0 in VS Code 1.79.2 (695af097c7bd098fbf017ce3ac85e09bbc5dda06).
+[435 ms] Start: Resolving Remote
+[442 ms] Setting up container: /dazzling_banzai
+[442 ms] Context: desktop-linux
+[474 ms] Start: Run: docker inspect --type container /dazzling_banzai
+[631 ms] Start: Check Docker is running
+[632 ms] Start: Run: docker version --format {{.Server.APIVersion}}
+[800 ms] Server API version: 1.43
+[802 ms] Start: Run: /Applications/VSCode.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin) --ms-enable-electron-run-as-node /Users/robin/.vscode/extensions/ms-vscode-remote.remote-containers-0.295.0/dist/spec-node/devContainersSpecCLI.js set-up --container-id d8661489abfc732f916e2f950ab7d80c3f9466031efce5564d84687d2e65576c --user-data-folder /Users/robin/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/data --container-session-data-folder /tmp/devcontainers-ed7bc76f-8753-4e1e-abb7-1ad00620a45c1688598475967 --log-level debug --log-format json --config /Users/robin/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/imageConfigs/mcr.microsoft.com%2fdevcontainers%2fjavascript-node%3a0-18-bullseye.json --default-user-env-probe loginInteractiveShell --skip-post-create
+[1832 ms] @devcontainers/cli 0.42.0. Node.js v16.17.1. darwin 20.6.0 x64.
+[1832 ms] Start: Run: docker buildx version
+[3072 ms] github.com/docker/buildx v0.11.0 687feca9e8dcd1534ac4c026bc4db5a49de0dd6e
+[3072 ms] 
+[3079 ms] Start: Run: docker inspect --type container d8661489abfc732f916e2f950ab7d80c3f9466031efce5564d84687d2e65576c
+[3251 ms] Start: Inspecting container
+[3251 ms] Start: Run: docker inspect --type container d8661489abfc732f916e2f950ab7d80c3f9466031efce5564d84687d2e65576c
+[3396 ms] Start: Run in container: /bin/sh
+[3401 ms] Start: Run in container: uname -m
+[3784 ms] x86_64
+[3784 ms] 
+[3784 ms] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[3793 ms] PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+NAME="Debian GNU/Linux"
+VERSION_ID="11"
+VERSION="11 (bullseye)"
+VERSION_CODENAME=bullseye
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+[3793 ms] 
+[3793 ms] Start: Run in container: cat /etc/passwd
+[3818 ms] Start: Run in container: test -f '/var/devcontainer/.patchEtcEnvironmentMarker'
+[3824 ms] 
+[3824 ms] 
+[3825 ms] Start: Run in container: test -f '/var/devcontainer/.patchEtcProfileMarker'
+[3832 ms] 
+[3832 ms] 
+[3844 ms] Start: Run: /Applications/VSCode.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin) --ms-enable-electron-run-as-node /Users/robin/.vscode/extensions/ms-vscode-remote.remote-containers-0.295.0/dist/spec-node/devContainersSpecCLI.js read-configuration --container-id d8661489abfc732f916e2f950ab7d80c3f9466031efce5564d84687d2e65576c --log-level debug --log-format json --config /Users/robin/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/imageConfigs/mcr.microsoft.com%2fdevcontainers%2fjavascript-node%3a0-18-bullseye.json --include-merged-configuration --mount-workspace-git-root true --terminal-columns 113 --terminal-rows 28
+[4467 ms] @devcontainers/cli 0.42.0. Node.js v16.17.1. darwin 20.6.0 x64.
+[4467 ms] Start: Run: docker inspect --type container d8661489abfc732f916e2f950ab7d80c3f9466031efce5564d84687d2e65576c
+[4705 ms] Start: Inspecting container
+[4706 ms] Start: Run: docker inspect --type container d8661489abfc732f916e2f950ab7d80c3f9466031efce5564d84687d2e65576c
+[4815 ms] Start: Run in container: /bin/sh
+[4818 ms] Start: Run in container: uname -m
+[5057 ms] x86_64
+[5057 ms] 
+[5057 ms] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[5068 ms] PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+NAME="Debian GNU/Linux"
+VERSION_ID="11"
+VERSION="11 (bullseye)"
+VERSION_CODENAME=bullseye
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+[5068 ms] 
+[5068 ms] Start: Run in container: cat /etc/passwd
+[5081 ms] Start: Run in container: test -d /home/node/.vscode-server
+[5090 ms] 
+[5090 ms] 
+[5091 ms] Start: Run in container: test ! -f '/home/node/.vscode-server/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/node/.vscode-server/data/Machine' && { > '/home/node/.vscode-server/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[5116 ms] 
+[5117 ms] 
+[5117 ms] Exit code 1
+[5118 ms] Start: Run in container: cat /home/node/.vscode-server/data/Machine/settings.json
+[5140 ms] 
+[5141 ms] cat: /home/node/.vscode-server/data/Machine/settings.json: No such file or directory
+[5141 ms] Exit code 1
+[5142 ms] Start: Run in container: test -d /home/node/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06
+[5152 ms] 
+[5152 ms] 
+[5153 ms] Start: Run in container: test -d /vscode/vscode-server/bin/linux-x64/695af097c7bd098fbf017ce3ac85e09bbc5dda06
+[5156 ms] 
+[5157 ms] 
+[5157 ms] Start: Run in container: /bin/sh
+[5159 ms] Start: Launching Dev Containers helper.
+[5159 ms] ssh-agent: SSH_AUTH_SOCK in container (/tmp/vscode-ssh-auth-02bae3f5-1137-4d58-87db-19464d6efba2.sock) forwarded to local host (/private/tmp/com.apple.launchd.79Nf8CTICs/Listeners).
+[5160 ms] X11 forwarding: DISPLAY not set on local host.
+[5160 ms] Start: Run in container: gpgconf --list-dir agent-socket
+[5160 ms] Start: Run in container: touch '/vscode/vscode-server/bin/linux-x64/695af097c7bd098fbf017ce3ac85e09bbc5dda06'
+[5208 ms] /home/node/.gnupg/S.gpg-agent
+[5218 ms] 
+[5218 ms] Start: Run in container: gpgconf --list-dir homedir
+[5285 ms] /home/node/.gnupg
+[5285 ms] 
+[5285 ms] Start: Run in container: ls '/home/node/.gnupg/private-keys-v1.d' 2>/dev/null
+[5310 ms] 
+[5311 ms] 
+[5311 ms] Exit code 2
+[5312 ms] Start: Run: gpgconf --list-dir agent-extra-socket
+[5321 ms] gpg-agent: No agent-extra-socket found on local host.
+[5322 ms] Start: Run in container: command -v docker >/dev/null 2>&1
+[5350 ms] 
+[5350 ms] 
+[5350 ms] Exit code 127
+[5351 ms] Start: Run in container: /bin/sh
+[5355 ms] userEnvProbe: loginInteractiveShell (default)
+[5355 ms] Start: Run in container: test -f '/tmp/devcontainers-ed7bc76f-8753-4e1e-abb7-1ad00620a45c1688598475967/env-loginInteractiveShell.json'
+[5358 ms] Start: Run in container: echo ~
+[5375 ms] 
+[5375 ms] 
+[5375 ms] Exit code 1
+[5376 ms] Start: Run in container: # Test for /home/node/.ssh/known_hosts and ssh
+[5377 ms] userEnvProbe: not found in cache
+[5378 ms] userEnvProbe shell: /bin/bash
+[5418 ms] /home/node/.ssh/known_hosts exists
+[5419 ms] 
+[5419 ms] Exit code 1
+[5557 ms] 
+[5558 ms] 
+[5558 ms] Start: Run in container: command -v git >/dev/null 2>&1 && git config --system --replace-all credential.helper '!f() { /home/node/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node /tmp/vscode-remote-containers-02bae3f5-1137-4d58-87db-19464d6efba2.js git-credential-helper $*; }; f' || true
+[5567 ms] 
+[5567 ms] 
+[5568 ms] Start: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[5695 ms] /home/node
+[5695 ms] 
+[5695 ms] Start: Run in container: cat <<'EOF-/tmp/vscode-remote-containers-02bae3f5-1137-4d58-87db-19464d6efba2.js' >/tmp/vscode-remote-containers-02bae3f5-1137-4d58-87db-19464d6efba2.js
+[5708 ms] 
+[5709 ms] 
+[5709 ms] Start: Run in container: cat <<'EOF-/tmp/vscode-remote-containers-server-02bae3f5-1137-4d58-87db-19464d6efba2.js' >/tmp/vscode-remote-containers-server-02bae3f5-1137-4d58-87db-19464d6efba2.js_1688598484749
+[5753 ms] 
+[5753 ms] 
+[5952 ms] Start: Run in container: cat '/home/node/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/product.json'
+[5966 ms] Extension host agent is already running.
+[5966 ms] Start: Run in container: cat '/home/node/.vscode-server/data/Machine/.devport-695af097c7bd098fbf017ce3ac85e09bbc5dda06' 2>/dev/null
+[5970 ms] 34611
+[5970 ms] 
+[5971 ms] Start: Run in container: cat '/home/node/.vscode-server/data/Machine/.connection-token-695af097c7bd098fbf017ce3ac85e09bbc5dda06'
+[5983 ms] c10ae236-5de9-4823-8295-fd2d20f9a2f2
+[5984 ms] 
+[5984 ms] Port forwarding for container port 34611 starts listening on local port.
+[5985 ms] Port forwarding local port 34611 to container port 34611
+[5986 ms] Start: Run: /Applications/VSCode.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin) --ms-enable-electron-run-as-node /Users/robin/.vscode/extensions/ms-vscode-remote.remote-containers-0.295.0/dist/spec-node/devContainersSpecCLI.js run-user-commands --user-data-folder /Users/robin/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/data --container-session-data-folder /tmp/devcontainers-ed7bc76f-8753-4e1e-abb7-1ad00620a45c1688598475967 --container-id d8661489abfc732f916e2f950ab7d80c3f9466031efce5564d84687d2e65576c --log-level debug --log-format json --config /Users/robin/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/imageConfigs/mcr.microsoft.com%2fdevcontainers%2fjavascript-node%3a0-18-bullseye.json --default-user-env-probe loginInteractiveShell --skip-non-blocking-commands false --prebuild false --stop-for-personalization true --remote-env REMOTE_CONTAINERS_IPC=/tmp/vscode-remote-containers-ipc-02bae3f5-1137-4d58-87db-19464d6efba2.sock --remote-env SSH_AUTH_SOCK=/tmp/vscode-ssh-auth-02bae3f5-1137-4d58-87db-19464d6efba2.sock --remote-env REMOTE_CONTAINERS=true --mount-workspace-git-root true --terminal-columns 113 --terminal-rows 28 --dotfiles-target-path ~/dotfiles
+[6140 ms] userEnvProbe PATHs:
+Probe:     '/usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/node/.local/bin'
+Container: '/usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+Merged:    '/usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/node/.local/bin'
+[6141 ms] Start: Run in container: mkdir -p '/tmp/devcontainers-ed7bc76f-8753-4e1e-abb7-1ad00620a45c1688598475967' && cat > '/tmp/devcontainers-ed7bc76f-8753-4e1e-abb7-1ad00620a45c1688598475967/env-loginInteractiveShell.json' << 'envJSON'
+[6155 ms] 
+[6155 ms] 
+[6155 ms] Start: Run in container: /bin/sh -c # Watch installed extensions
+[6156 ms] Start: Run in container: /bin/sh -c # Watch machine settings
+[6249 ms] Port forwarding connection from 61660 > 34611 > 34611 in the container.
+[6249 ms] Start: Run in container: /home/node/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node -e 
+[6919 ms] @devcontainers/cli 0.42.0. Node.js v16.17.1. darwin 20.6.0 x64.
+[6919 ms] Start: Run: docker buildx version
+[7097 ms] Port forwarding 61660 > 34611 > 34611 stderr: Connection established
+[7130 ms] Port forwarding connection from 61661 > 34611 > 34611 in the container.
+[7131 ms] Start: Run in container: /home/node/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node -e 
+[7216 ms] github.com/docker/buildx v0.11.0 687feca9e8dcd1534ac4c026bc4db5a49de0dd6e
+[7216 ms] 
+[7228 ms] Start: Run: docker inspect --type container d8661489abfc732f916e2f950ab7d80c3f9466031efce5564d84687d2e65576c
+[7381 ms] Start: Inspecting container
+[7381 ms] Start: Run: docker inspect --type container d8661489abfc732f916e2f950ab7d80c3f9466031efce5564d84687d2e65576c
+[7518 ms] Start: Run in container: /bin/sh
+[7527 ms] Start: Run in container: uname -m
+[7998 ms] x86_64
+[7998 ms] 
+[7998 ms] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[8018 ms] PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+NAME="Debian GNU/Linux"
+VERSION_ID="11"
+VERSION="11 (bullseye)"
+VERSION_CODENAME=bullseye
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+[8018 ms] 
+[8018 ms] Start: Run in container: cat /etc/passwd
+[8039 ms] userEnvProbe: loginInteractiveShell (default)
+[8040 ms] Start: Run in container: test -f '/tmp/devcontainers-ed7bc76f-8753-4e1e-abb7-1ad00620a45c1688598475967/env-loginInteractiveShell.json'
+[8078 ms] 
+[8079 ms] 
+[8079 ms] Start: Run in container: mkdir -p '/home/node/.devcontainer' && CONTENT="$(cat '/home/node/.devcontainer/.onCreateCommandMarker' 2>/dev/null || echo ENOENT)" && [ "${CONTENT:-2023-07-05T21:04:59.382076914Z}" != '2023-07-05T21:04:59.382076914Z' ] && echo '2023-07-05T21:04:59.382076914Z' > '/home/node/.devcontainer/.onCreateCommandMarker'
+[8121 ms] 
+[8121 ms] 
+[8121 ms] Exit code 1
+[8122 ms] Start: Run in container: cat '/tmp/devcontainers-ed7bc76f-8753-4e1e-abb7-1ad00620a45c1688598475967/env-loginInteractiveShell.json'
+[8150 ms] {
+        "NVM_RC_VERSION": "",
+        "HOSTNAME": "d8661489abfc",
+        "REMOTE_CONTAINERS_IPC": "/tmp/vscode-remote-containers-ipc-02bae3f5-1137-4d58-87db-19464d6efba2.sock",
+        "YARN_VERSION": "1.22.19",
+        "HOME": "/home/node",
+        "LS_COLORS": "",
+        "NVM_SYMLINK_CURRENT": "true",
+        "NVM_DIR": "/usr/local/share/nvm",
+        "REMOTE_CONTAINERS_SOCKETS": "[\"/tmp/vscode-ssh-auth-02bae3f5-1137-4d58-87db-19464d6efba2.sock\"]",
+        "USER": "node",
+        "SHLVL": "1",
+        "NVM_CD_FLAGS": "",
+        "PROMPT_DIRTRIM": "4",
+        "PATH": "/usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/node/.local/bin",
+        "NODE_VERSION": "18.16.0",
+        "_": "/bin/cat"
+}
+[8150 ms] 
+[8150 ms] Start: Run in container: mkdir -p '/home/node/.devcontainer' && CONTENT="$(cat '/home/node/.devcontainer/.updateContentCommandMarker' 2>/dev/null || echo ENOENT)" && [ "${CONTENT:-2023-07-05T21:04:59.382076914Z}" != '2023-07-05T21:04:59.382076914Z' ] && echo '2023-07-05T21:04:59.382076914Z' > '/home/node/.devcontainer/.updateContentCommandMarker'
+[8171 ms] 
+[8171 ms] 
+[8171 ms] Exit code 1
+[8171 ms] Start: Run in container: mkdir -p '/home/node/.devcontainer' && CONTENT="$(cat '/home/node/.devcontainer/.postCreateCommandMarker' 2>/dev/null || echo ENOENT)" && [ "${CONTENT:-2023-07-05T21:04:59.382076914Z}" != '2023-07-05T21:04:59.382076914Z' ] && echo '2023-07-05T21:04:59.382076914Z' > '/home/node/.devcontainer/.postCreateCommandMarker'
+[8189 ms] 
+[8189 ms] 
+[8189 ms] Exit code 1
+[8204 ms] Start: Run in container: # Test for /home/node/.gitconfig and git
+[8255 ms] /home/node/.gitconfig exists
+[8256 ms] 
+[8256 ms] Exit code 1
+[8258 ms] Start: Run in container: command -v git >/dev/null 2>&1 && git config --global --replace-all credential.helper '!f() { /home/node/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node /tmp/vscode-remote-containers-02bae3f5-1137-4d58-87db-19464d6efba2.js git-credential-helper $*; }; f' || true
+[8305 ms] Port forwarding 61661 > 34611 > 34611 stderr: Connection established
+[8337 ms] 
+[8337 ms] 
+

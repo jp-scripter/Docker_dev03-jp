@@ -1,0 +1,375 @@
+[523 ms] Dev Containers 0.295.0 in VS Code 1.79.2 (695af097c7bd098fbf017ce3ac85e09bbc5dda06).
+[523 ms] Start: Resolving Remote
+[913 ms] Setting up container for folder or workspace: /Users/robin/Repos/Codespaces_/dev02-sue/Codespaces_dev02-sue.code-workspace
+[913 ms] Context: desktop-linux
+[1013 ms] Start: Check Docker is running
+[1013 ms] Start: Run: docker version --format {{.Server.APIVersion}}
+[1315 ms] Server API version: 1.43
+[1317 ms] Start: Run: docker volume ls -q
+[1512 ms] Start: Run: docker inspect --type container d8661489abfc732f916e2f950ab7d80c3f9466031efce5564d84687d2e65576c
+[1710 ms] Start: Run: docker ps -q -a --filter label=vsch.local.folder=/Users/robin/Repos/Codespaces_/dev02-sue --filter label=vsch.quality=stable
+[1953 ms] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=/Users/robin/Repos/Codespaces_/dev02-sue --filter label=devcontainer.config_file=/Users/robin/Repos/Codespaces_/dev02-sue/.devcontainer/devcontainer.json
+[2112 ms] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=/Users/robin/Repos/Codespaces_/dev02-sue
+[2305 ms] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=/Users/robin/Repos/Codespaces_/dev02-sue
+[2470 ms] Start: Run: /Applications/VSCode.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin) --ms-enable-electron-run-as-node /Users/robin/.vscode/extensions/ms-vscode-remote.remote-containers-0.295.0/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /Users/robin/Repos/Codespaces_/dev02-sue --id-label devcontainer.local_folder=/Users/robin/Repos/Codespaces_/dev02-sue --id-label devcontainer.config_file=/Users/robin/Repos/Codespaces_/dev02-sue/.devcontainer/devcontainer.json --log-level debug --log-format json --config /Users/robin/Repos/Codespaces_/dev02-sue/.devcontainer/devcontainer.json --mount-workspace-git-root true
+[3386 ms] @devcontainers/cli 0.42.0. Node.js v16.17.1. darwin 20.6.0 x64.
+[3386 ms] Start: Run: git rev-parse --show-cdup
+[3418 ms] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=/Users/robin/Repos/Codespaces_/dev02-sue --filter label=devcontainer.config_file=/Users/robin/Repos/Codespaces_/dev02-sue/.devcontainer/devcontainer.json
+[3564 ms] Start: Run: /Applications/VSCode.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin) --ms-enable-electron-run-as-node /Users/robin/.vscode/extensions/ms-vscode-remote.remote-containers-0.295.0/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /Users/robin/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/data --container-session-data-folder /tmp/devcontainers-d78a2d1d-b66e-4c95-ac0c-5619c324fc7f1688600725517 --workspace-folder /Users/robin/Repos/Codespaces_/dev02-sue --workspace-mount-consistency cached --id-label devcontainer.local_folder=/Users/robin/Repos/Codespaces_/dev02-sue --id-label devcontainer.config_file=/Users/robin/Repos/Codespaces_/dev02-sue/.devcontainer/devcontainer.json --log-level debug --log-format json --config /Users/robin/Repos/Codespaces_/dev02-sue/.devcontainer/devcontainer.json --default-user-env-probe loginInteractiveShell --mount type=volume,source=vscode,target=/vscode,external=true --skip-post-create --update-remote-user-uid-default on --mount-workspace-git-root true
+[4181 ms] @devcontainers/cli 0.42.0. Node.js v16.17.1. darwin 20.6.0 x64.
+[4181 ms] Start: Run: docker buildx version
+[4400 ms] github.com/docker/buildx v0.11.0 687feca9e8dcd1534ac4c026bc4db5a49de0dd6e
+[4400 ms] 
+[4400 ms] Start: Resolving Remote
+[4410 ms] Start: Run: git rev-parse --show-cdup
+[4466 ms] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=/Users/robin/Repos/Codespaces_/dev02-sue --filter label=devcontainer.config_file=/Users/robin/Repos/Codespaces_/dev02-sue/.devcontainer/devcontainer.json
+[4609 ms] Start: Run: docker inspect --type image mcr.microsoft.com/devcontainers/javascript-node:0-18-bullseye
+[4793 ms] local container features stored at: /Users/robin/.vscode/extensions/ms-vscode-remote.remote-containers-0.295.0/dist/node_modules/vscode-dev-containers/container-features
+[4796 ms] Start: Run: tar --no-same-owner -x -f -
+[4831 ms] Start: Run: docker events --format {{json .}} --filter event=start
+[4836 ms] Start: Starting container
+[4839 ms] Start: Run: docker run --sig-proxy=false -a STDOUT -a STDERR --mount type=bind,source=/Users/robin/Repos/Codespaces_/dev02-sue,target=/workspaces/dev02-sue,consistency=cached --mount type=volume,src=vscode,dst=/vscode -l devcontainer.local_folder=/Users/robin/Repos/Codespaces_/dev02-sue -l devcontainer.config_file=/Users/robin/Repos/Codespaces_/dev02-sue/.devcontainer/devcontainer.json --entrypoint /bin/sh -l devcontainer.metadata=[{"id":"ghcr.io/devcontainers/features/common-utils:2"},{"id":"ghcr.io/devcontainers/features/git:1"},{"id":"ghcr.io/devcontainers/features/node:1","customizations":{"vscode":{"extensions":["dbaeumer.vscode-eslint"]}}},{"customizations":{"vscode":{"extensions":["dbaeumer.vscode-eslint"]}},"remoteUser":"node"},{"postCreateCommand":"cd client1 && npm install","customizations":{"vscode":{"settings":{},"extensions":["streetsidesoftware.code-spell-checker"]}}}] mcr.microsoft.com/devcontainers/javascript-node:0-18-bullseye -c echo Container started
+Container started
+[7267 ms] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=/Users/robin/Repos/Codespaces_/dev02-sue --filter label=devcontainer.config_file=/Users/robin/Repos/Codespaces_/dev02-sue/.devcontainer/devcontainer.json
+[7427 ms] Start: Run: docker inspect --type container de7eaad68d29
+[7580 ms] Start: Inspecting container
+[7580 ms] Start: Run: docker inspect --type container de7eaad68d29081ab4b48517440f32c7752015e6c878ab845700027910855f43
+[7744 ms] Start: Run in container: /bin/sh
+[7748 ms] Start: Run in container: uname -m
+[8327 ms] x86_64
+[8327 ms] 
+[8328 ms] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[8345 ms] PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+NAME="Debian GNU/Linux"
+VERSION_ID="11"
+VERSION="11 (bullseye)"
+VERSION_CODENAME=bullseye
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+[8345 ms] 
+[8346 ms] Start: Run in container: cat /etc/passwd
+[8362 ms] Start: Run in container: test -f '/var/devcontainer/.patchEtcEnvironmentMarker'
+[8371 ms] 
+[8371 ms] 
+[8371 ms] Exit code 1
+[8372 ms] Start: Run in container: /bin/sh
+[8376 ms] Start: Run in container: test ! -f '/var/devcontainer/.patchEtcEnvironmentMarker' && set -o noclobber && mkdir -p '/var/devcontainer' && { > '/var/devcontainer/.patchEtcEnvironmentMarker' ; } 2> /dev/null
+[8692 ms] 
+[8692 ms] 
+[8692 ms] Start: Run in container: cat >> /etc/environment <<'etcEnvrionmentEOF'
+[8697 ms] 
+[8697 ms] 
+[8697 ms] Start: Run in container: test -f '/var/devcontainer/.patchEtcProfileMarker'
+[8700 ms] 
+[8700 ms] 
+[8700 ms] Exit code 1
+[8700 ms] Start: Run in container: test ! -f '/var/devcontainer/.patchEtcProfileMarker' && set -o noclobber && mkdir -p '/var/devcontainer' && { > '/var/devcontainer/.patchEtcProfileMarker' ; } 2> /dev/null
+[8713 ms] 
+[8713 ms] 
+[8713 ms] Start: Run in container: sed -i -E 's/((^|\s)PATH=)([^\$]*)$/\1${PATH:-\3}/g' /etc/profile || true
+[8725 ms] 
+[8726 ms] 
+[8744 ms] Start: Run: docker inspect --type container de7eaad68d29081ab4b48517440f32c7752015e6c878ab845700027910855f43
+[8887 ms] Start: Run: docker exec -i -u root de7eaad68d29081ab4b48517440f32c7752015e6c878ab845700027910855f43 /bin/sh -c echo "New container started. Keep-alive process started." ; export VSCODE_REMOTE_CONTAINERS_SESSION=d78a2d1d-b66e-4c95-ac0c-5619c324fc7f1688600725517 ; /bin/sh
+[8894 ms] Start: Run: /Applications/VSCode.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin) --ms-enable-electron-run-as-node /Users/robin/.vscode/extensions/ms-vscode-remote.remote-containers-0.295.0/dist/spec-node/devContainersSpecCLI.js read-configuration --workspace-folder /Users/robin/Repos/Codespaces_/dev02-sue --id-label devcontainer.local_folder=/Users/robin/Repos/Codespaces_/dev02-sue --id-label devcontainer.config_file=/Users/robin/Repos/Codespaces_/dev02-sue/.devcontainer/devcontainer.json --container-id de7eaad68d29081ab4b48517440f32c7752015e6c878ab845700027910855f43 --log-level debug --log-format json --config /Users/robin/Repos/Codespaces_/dev02-sue/.devcontainer/devcontainer.json --include-merged-configuration --mount-workspace-git-root true
+[9224 ms] New container started. Keep-alive process started.
+[9454 ms] @devcontainers/cli 0.42.0. Node.js v16.17.1. darwin 20.6.0 x64.
+[9454 ms] Start: Run: git rev-parse --show-cdup
+[9481 ms] Start: Run: docker inspect --type container de7eaad68d29081ab4b48517440f32c7752015e6c878ab845700027910855f43
+[9655 ms] Start: Inspecting container
+[9656 ms] Start: Run: docker inspect --type container de7eaad68d29081ab4b48517440f32c7752015e6c878ab845700027910855f43
+[9784 ms] Start: Run in container: /bin/sh
+[9786 ms] Start: Run in container: uname -m
+[9961 ms] x86_64
+[9961 ms] 
+[9961 ms] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[9966 ms] PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+NAME="Debian GNU/Linux"
+VERSION_ID="11"
+VERSION="11 (bullseye)"
+VERSION_CODENAME=bullseye
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+[9967 ms] 
+[9967 ms] Start: Run in container: cat /etc/passwd
+[9977 ms] Start: Run in container: command -v git >/dev/null 2>&1 && cd '/workspaces/dev02-sue' && test -d .git && test "$(stat -c %u .)" != "$(id -u)"
+[9994 ms] 
+[9994 ms] 
+[9995 ms] Start: Run: /bin/sh -c cd '/Users/robin/Repos/Codespaces_/dev02-sue' && test "$(stat -f %u .)" = "$(id -u)"
+[10019 ms] Start: Updating configuration state
+[10022 ms] Start: Setup shutdown monitor
+[10024 ms] Forking shutdown monitor: /Users/robin/.vscode/extensions/ms-vscode-remote.remote-containers-0.295.0/dist/shutdown/shutdownMonitorProcess /var/folders/_g/_lp7_9fj3x330y6mm_8fr4qc0000gn/T/vscode-remote-containers-5022df11-6e14-4ffb-83f3-29751d825fe9.sock singleContainer Debug /Users/robin/Library/Application Support/Code/logs/20230705T112248/window20/exthost/ms-vscode-remote.remote-containers 1688600730693
+[10029 ms] Start: Run in container: test -d /home/node/.vscode-server
+[10057 ms] 
+[10057 ms] 
+[10057 ms] Exit code 1
+[10058 ms] Start: Run in container: test -d /home/node/.vscode-remote
+[10085 ms] 
+[10085 ms] 
+[10085 ms] Exit code 1
+[10086 ms] Start: Run in container: test ! -f '/home/node/.vscode-server/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/node/.vscode-server/data/Machine' && { > '/home/node/.vscode-server/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[10114 ms] 
+[10114 ms] 
+[10115 ms] Start: Run in container: cat /home/node/.vscode-server/data/Machine/settings.json
+[10148 ms] 
+[10148 ms] cat: /home/node/.vscode-server/data/Machine/settings.json: No such file or directory
+[10148 ms] Exit code 1
+[10149 ms] Start: Run in container: test -d /home/node/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06
+[10167 ms] 
+[10167 ms] 
+[10168 ms] Exit code 1
+[10168 ms] Start: Run in container: test -d /vscode/vscode-server/bin/linux-x64/695af097c7bd098fbf017ce3ac85e09bbc5dda06
+[10185 ms] 
+[10186 ms] 
+[10186 ms] Start: Run in container: mkdir -p '/home/node/.vscode-server/bin' && ln -snf '/vscode/vscode-server/bin/linux-x64/695af097c7bd098fbf017ce3ac85e09bbc5dda06' '/home/node/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06'
+[10201 ms] 
+[10201 ms] 
+[10202 ms] Start: Run in container: /bin/sh
+[10209 ms] Start: Launching Dev Containers helper.
+[10209 ms] ssh-agent: SSH_AUTH_SOCK in container (/tmp/vscode-ssh-auth-51c76749-1cd9-4453-af18-fba109cd8dc9.sock) forwarded to local host (/private/tmp/com.apple.launchd.79Nf8CTICs/Listeners).
+[10210 ms] X11 forwarding: DISPLAY not set on local host.
+[10213 ms] Start: Run in container: gpgconf --list-dir agent-socket
+[10213 ms] Start: Run in container: touch '/vscode/vscode-server/bin/linux-x64/695af097c7bd098fbf017ce3ac85e09bbc5dda06'
+[10225 ms] /home/node/.gnupg/S.gpg-agent
+[10226 ms] 
+[10226 ms] Start: Run in container: gpgconf --list-dir homedir
+[10250 ms] /home/node/.gnupg
+[10250 ms] 
+[10251 ms] Start: Run in container: ls '/home/node/.gnupg/private-keys-v1.d' 2>/dev/null
+[10264 ms] 
+[10265 ms] 
+[10265 ms] Exit code 2
+[10266 ms] Start: Run: gpgconf --list-dir agent-extra-socket
+[10282 ms] gpg-agent: No agent-extra-socket found on local host.
+[10282 ms] Start: Run in container: command -v docker >/dev/null 2>&1
+[10292 ms] 
+[10293 ms] 
+[10293 ms] Exit code 127
+[10294 ms] Start: Run in container: /bin/sh
+[10303 ms] userEnvProbe: loginInteractiveShell (default)
+[10308 ms] Start: Run in container: test -f '/tmp/devcontainers-d78a2d1d-b66e-4c95-ac0c-5619c324fc7f1688600725517/env-loginInteractiveShell.json'
+[10387 ms] Start: Run in container: echo ~
+[10453 ms] 
+[10455 ms] 
+[10456 ms] Exit code 1
+[10456 ms] Start: Run in container: # Test for /home/node/.ssh/known_hosts and ssh
+[10457 ms] userEnvProbe: not found in cache
+[10457 ms] userEnvProbe shell: /bin/bash
+[10530 ms] 
+[10531 ms] 
+[10531 ms] Start: Run in container: # Copy /Users/robin/.ssh/known_hosts to /home/node/.ssh/known_hosts
+[10617 ms] 
+[10617 ms] 
+[10801 ms] /home/node
+[10802 ms] 
+[10805 ms] Start: Run in container: cat <<'EOF-/tmp/vscode-remote-containers-51c76749-1cd9-4453-af18-fba109cd8dc9.js' >/tmp/vscode-remote-containers-51c76749-1cd9-4453-af18-fba109cd8dc9.js
+[10823 ms] 
+[10824 ms] 
+[10824 ms] Start: Run in container: cat <<'EOF-/tmp/vscode-remote-containers-server-51c76749-1cd9-4453-af18-fba109cd8dc9.js' >/tmp/vscode-remote-containers-server-51c76749-1cd9-4453-af18-fba109cd8dc9.js_1688600741517
+[10857 ms] 
+[10859 ms] 
+[11009 ms] 
+[11009 ms] 
+[11009 ms] Start: Run in container: command -v git >/dev/null 2>&1 && git config --system --replace-all credential.helper '!f() { /home/node/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node /tmp/vscode-remote-containers-51c76749-1cd9-4453-af18-fba109cd8dc9.js git-credential-helper $*; }; f' || true
+[11019 ms] 
+[11019 ms] 
+[11020 ms] Start: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[11332 ms] Start: Run in container: cat '/home/node/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/product.json'
+[11352 ms] userEnvProbe PATHs:
+Probe:     '/usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/node/.local/bin'
+Container: '/usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+[11357 ms] Start: Run in container: mkdir -p '/tmp/devcontainers-d78a2d1d-b66e-4c95-ac0c-5619c324fc7f1688600725517' && cat > '/tmp/devcontainers-d78a2d1d-b66e-4c95-ac0c-5619c324fc7f1688600725517/env-loginInteractiveShell.json' << 'envJSON'
+[11367 ms] 
+[11367 ms] 
+[11367 ms] Start: Run in container: cat '/home/node/.vscode-server/data/Machine/.connection-token-695af097c7bd098fbf017ce3ac85e09bbc5dda06' 2>/dev/null || (umask 377 && echo '7d3df592-c976-48eb-9660-973b768ee1e0' >'/home/node/.vscode-server/data/Machine/.connection-token-695af097c7bd098fbf017ce3ac85e09bbc5dda06-746e2d79-10c0-467f-ab93-40e7b6a48f4a' && mv -n '/home/node/.vscode-server/data/Machine/.connection-token-695af097c7bd098fbf017ce3ac85e09bbc5dda06-746e2d79-10c0-467f-ab93-40e7b6a48f4a' '/home/node/.vscode-server/data/Machine/.connection-token-695af097c7bd098fbf017ce3ac85e09bbc5dda06' && rm -f '/home/node/.vscode-server/data/Machine/.connection-token-695af097c7bd098fbf017ce3ac85e09bbc5dda06-746e2d79-10c0-467f-ab93-40e7b6a48f4a' && cat '/home/node/.vscode-server/data/Machine/.connection-token-695af097c7bd098fbf017ce3ac85e09bbc5dda06')
+[11381 ms] 7d3df592-c976-48eb-9660-973b768ee1e0
+[11381 ms] 
+[11382 ms] Start: Starting VS Code Server
+[11383 ms] Start: Preparing Extensions
+[11384 ms] Start: Run in container: test ! -f '/home/node/.vscode-server/data/Machine/.installExtensionsMarker' && set -o noclobber && mkdir -p '/home/node/.vscode-server/data/Machine' && { > '/home/node/.vscode-server/data/Machine/.installExtensionsMarker' ; } 2> /dev/null
+[11401 ms] 
+[11402 ms] 
+[11404 ms] Extensions cache, install extensions: dbaeumer.vscode-eslint, streetsidesoftware.code-spell-checker
+[11404 ms] Start: Run in container: test -d /home/node/.vscode-server/extensionsCache && ls /home/node/.vscode-server/extensionsCache || true
+[11416 ms] 
+[11416 ms] 
+[11417 ms] Start: Run in container: test -d /vscode/vscode-server/extensionsCache && ls /vscode/vscode-server/extensionsCache || true
+[11458 ms] dbaeumer.vscode-eslint-2.4.2
+dbaeumer.vscode-eslint-2.4.2.sigzip
+ritwickdey.liveserver-5.7.9
+ritwickdey.liveserver-5.7.9.sigzip
+streetsidesoftware.code-spell-checker-2.20.5
+streetsidesoftware.code-spell-checker-2.20.5.sigzip
+[11464 ms] 
+[11464 ms] Extensions cache, link in container: dbaeumer.vscode-eslint-2.4.2, dbaeumer.vscode-eslint-2.4.2.sigzip, streetsidesoftware.code-spell-checker-2.20.5, streetsidesoftware.code-spell-checker-2.20.5.sigzip
+[11464 ms] Start: Run in container: mkdir -p '/home/node/.vscode-server/extensionsCache' && ln -s '/vscode/vscode-server/extensionsCache'/* '/home/node/.vscode-server/extensionsCache' || true
+[11486 ms] 
+[11486 ms] 
+[11488 ms] Optimizing extensions for quality: stable
+[11489 ms] Start: Run in container: cd /vscode/vscode-server/extensionsCache && touch 'dbaeumer.vscode-eslint-2.4.2' 'dbaeumer.vscode-eslint-2.4.2.sigzip' 'streetsidesoftware.code-spell-checker-2.20.5' 'streetsidesoftware.code-spell-checker-2.20.5.sigzip'
+[11490 ms] Start: Run in container: /home/node/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/code-server --log debug --force-disable-user-env --server-data-dir /home/node/.vscode-server --telemetry-level all --accept-server-license-terms --host 127.0.0.1 --port 0 --connection-token-file /home/node/.vscode-server/data/Machine/.connection-token-695af097c7bd098fbf017ce3ac85e09bbc5dda06 --extensions-download-dir /home/node/.vscode-server/extensionsCache --install-extension dbaeumer.vscode-eslint --install-extension streetsidesoftware.code-spell-checker --start-server 
+[11524 ms] 
+[11531 ms] 
+[11840 ms] *
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+[11853 ms] Server bound to 127.0.0.1:42721 (IPv4)
+Extension host agent listening on 42721
+
+[11853 ms] Start: Run in container: echo 42721 >'/home/node/.vscode-server/data/Machine/.devport-695af097c7bd098fbf017ce3ac85e09bbc5dda06'
+[11859 ms] 
+[11859 ms] 
+[11859 ms] Port forwarding for container port 42721 starts listening on local port.
+[11860 ms] Port forwarding local port 42721 to container port 42721
+[11861 ms] Start: Run: /Applications/VSCode.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin) --ms-enable-electron-run-as-node /Users/robin/.vscode/extensions/ms-vscode-remote.remote-containers-0.295.0/dist/spec-node/devContainersSpecCLI.js run-user-commands --user-data-folder /Users/robin/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/data --container-session-data-folder /tmp/devcontainers-d78a2d1d-b66e-4c95-ac0c-5619c324fc7f1688600725517 --workspace-folder /Users/robin/Repos/Codespaces_/dev02-sue --id-label devcontainer.local_folder=/Users/robin/Repos/Codespaces_/dev02-sue --id-label devcontainer.config_file=/Users/robin/Repos/Codespaces_/dev02-sue/.devcontainer/devcontainer.json --container-id de7eaad68d29081ab4b48517440f32c7752015e6c878ab845700027910855f43 --log-level debug --log-format json --config /Users/robin/Repos/Codespaces_/dev02-sue/.devcontainer/devcontainer.json --default-user-env-probe loginInteractiveShell --skip-non-blocking-commands false --prebuild false --stop-for-personalization true --remote-env REMOTE_CONTAINERS_IPC=/tmp/vscode-remote-containers-ipc-51c76749-1cd9-4453-af18-fba109cd8dc9.sock --remote-env SSH_AUTH_SOCK=/tmp/vscode-ssh-auth-51c76749-1cd9-4453-af18-fba109cd8dc9.sock --remote-env REMOTE_CONTAINERS=true --mount-workspace-git-root true --terminal-columns 105 --terminal-rows 27 --dotfiles-target-path ~/dotfiles
+[11917 ms] Port forwarding connection from 61906 > 42721 > 42721 in the container.
+[11918 ms] Start: Run in container: /home/node/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node -e 
+[12657 ms] Port forwarding 61906 > 42721 > 42721 stderr: Connection established
+[12824 ms] @devcontainers/cli 0.42.0. Node.js v16.17.1. darwin 20.6.0 x64.
+[12824 ms] Start: Run: docker buildx version
+[12999 ms] [23:45:43] 
+
+
+
+
+[13102 ms] [23:45:43] Installing extensions...
+[13109 ms] github.com/docker/buildx v0.11.0 687feca9e8dcd1534ac4c026bc4db5a49de0dd6e
+[13109 ms] 
+[13115 ms] Start: Run: git rev-parse --show-cdup
+[13139 ms] [23:45:43] Extension host agent started.
+[13152 ms] Start: Run: docker inspect --type container de7eaad68d29081ab4b48517440f32c7752015e6c878ab845700027910855f43
+[13285 ms] Start: Inspecting container
+[13286 ms] Start: Run: docker inspect --type container de7eaad68d29081ab4b48517440f32c7752015e6c878ab845700027910855f43
+[13361 ms] Port forwarding connection from 61910 > 42721 > 42721 in the container.
+[13362 ms] Start: Run in container: /home/node/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node -e 
+[13449 ms] Start: Run in container: /bin/sh
+[13467 ms] Start: Run in container: uname -m
+[13632 ms] [23:45:44] No uninstalled extensions found.
+[13662 ms] [23:45:44] Started initializing default profile extensions in extensions installation folder. file:///home/node/.vscode-server/extensions
+[13754 ms] [23:45:44] ComputeTargetPlatform: linux-x64
+[13773 ms] [23:45:44] [127.0.0.1][c20e82e7][ManagementConnection] New connection established.
+[13815 ms] [23:45:44] Completed initializing default profile extensions in extensions installation folder. file:///home/node/.vscode-server/extensions
+[13955 ms] x86_64
+[13955 ms] 
+[13955 ms] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[13961 ms] PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+NAME="Debian GNU/Linux"
+VERSION_ID="11"
+VERSION="11 (bullseye)"
+VERSION_CODENAME=bullseye
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+[13962 ms] 
+[13962 ms] Start: Run in container: cat /etc/passwd
+[13971 ms] userEnvProbe: loginInteractiveShell (default)
+[13972 ms] Start: Run in container: test -f '/tmp/devcontainers-d78a2d1d-b66e-4c95-ac0c-5619c324fc7f1688600725517/env-loginInteractiveShell.json'
+[13977 ms] 
+[13977 ms] 
+[13978 ms] Start: Run in container: mkdir -p '/home/node/.devcontainer' && CONTENT="$(cat '/home/node/.devcontainer/.onCreateCommandMarker' 2>/dev/null || echo ENOENT)" && [ "${CONTENT:-2023-07-05T23:45:35.718458285Z}" != '2023-07-05T23:45:35.718458285Z' ] && echo '2023-07-05T23:45:35.718458285Z' > '/home/node/.devcontainer/.onCreateCommandMarker'
+[13991 ms] Port forwarding 61910 > 42721 > 42721 stderr: Connection established
+[13993 ms] [23:45:44] ComputeTargetPlatform: linux-x64
+[14008 ms] 
+[14008 ms] 
+[14008 ms] Start: Run in container: cat '/tmp/devcontainers-d78a2d1d-b66e-4c95-ac0c-5619c324fc7f1688600725517/env-loginInteractiveShell.json'
+[14026 ms] {
+        "NVM_RC_VERSION": "",
+        "HOSTNAME": "de7eaad68d29",
+        "REMOTE_CONTAINERS_IPC": "/tmp/vscode-remote-containers-ipc-51c76749-1cd9-4453-af18-fba109cd8dc9.sock",
+        "YARN_VERSION": "1.22.19",
+        "HOME": "/home/node",
+        "LS_COLORS": "",
+        "NVM_SYMLINK_CURRENT": "true",
+        "NVM_DIR": "/usr/local/share/nvm",
+        "REMOTE_CONTAINERS_SOCKETS": "[\"/tmp/vscode-ssh-auth-51c76749-1cd9-4453-af18-fba109cd8dc9.sock\"]",
+        "USER": "node",
+        "SHLVL": "1",
+        "NVM_CD_FLAGS": "",
+        "PROMPT_DIRTRIM": "4",
+        "PATH": "/usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/share/nvm/current/bin:/usr/local/share/npm-global/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/node/.local/bin",
+        "NODE_VERSION": "18.16.0",
+        "_": "/bin/cat"
+}
+[14026 ms] 
+[14026 ms] Start: Run in container: mkdir -p '/home/node/.devcontainer' && CONTENT="$(cat '/home/node/.devcontainer/.updateContentCommandMarker' 2>/dev/null || echo ENOENT)" && [ "${CONTENT:-2023-07-05T23:45:35.718458285Z}" != '2023-07-05T23:45:35.718458285Z' ] && echo '2023-07-05T23:45:35.718458285Z' > '/home/node/.devcontainer/.updateContentCommandMarker'
+[14055 ms] 
+[14056 ms] 
+[14056 ms] Start: Run in container: mkdir -p '/home/node/.devcontainer' && CONTENT="$(cat '/home/node/.devcontainer/.postCreateCommandMarker' 2>/dev/null || echo ENOENT)" && [ "${CONTENT:-2023-07-05T23:45:35.718458285Z}" != '2023-07-05T23:45:35.718458285Z' ] && echo '2023-07-05T23:45:35.718458285Z' > '/home/node/.devcontainer/.postCreateCommandMarker'
+[14078 ms] 
+[14078 ms] 
+Running the postCreateCommand from devcontainer.json...
+
+[14079 ms] Start: Run in container: /bin/sh -c cd client1 && npm install
+[14328 ms] [23:45:45] Log level changed to info
+[15200 ms] [23:45:45] [127.0.0.1][c4a08355][ExtensionHostConnection] New connection established.
+[15355 ms] [23:45:46] [127.0.0.1][c4a08355][ExtensionHostConnection] <379> Launched Extension Host Process.
+[15518 ms] [23:45:46] Installing extension 'dbaeumer.vscode-eslint'...
+[23:45:46] Getting Manifest... dbaeumer.vscode-eslint
+[15614 ms] [23:45:46] Installing extension 'streetsidesoftware.code-spell-checker'...
+[15616 ms] [23:45:46] Getting Manifest... streetsidesoftware.code-spell-checker
+[16328 ms] [23:45:47] Installing extension: dbaeumer.vscode-eslint
+[16342 ms] [23:45:47] Installing extension: streetsidesoftware.code-spell-checker
+[#########.........] \ idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] \ idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] \ idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] \ idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] \ idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] \ idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] \ idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] \ idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] \ idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] / idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] \ idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] \ idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] - idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] / idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] / idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] - idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] - idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] - idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] \ idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] \ idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] \ idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] \ idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] \ idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] \ idealTree:nodemon: sill fetch manifest unpipe@1.0.[#########.........] \ idealTree:simple-update-notifier: sill fetch manif[#########.........] \ idealTree:simple-update-notifier: sill fetch manif[#########.........] \ idealTree:simple-update-notifier: sill fetch manif[#########.........] | idealTree:simple-update-notifier: sill fetch manif[#########.........] / idealTree:simple-update-notifier: sill fetch manif[#########.........] / idealTree:simple-update-notifier: sill fetch manif[#########.........] / idealTree:simple-update-notifier: sill fetch manif[#########.........] / idealTree:simple-update-notifier: sill fetch manif[#########.........] | idealTree:simple-update-notifier: sill fetch manif[#########.........] - idealTree:simple-update-notifier: sill fetch manif[#########.........] - idealTree:simple-update-notifier: sill fetch manif[#########.........] - idealTree:simple-update-notifier: sill fetch manif[#########.........] | idealTree:simple-update-notifier: sill fetch manif[#####.............] | idealTree:nodemon: timing idealTree:node_modules/n[#####.............] | idealTree:nodemon: timing idealTree:node_modules/n[#####.............] | idealTree:nodemon: timing idealTree:node_modules/n[#####.............] | idealTree:nodemon: timing idealTree:node_modules/n[#####.............] | idealTree:nodemon: timing idealTree:node_modules/n[#####.............] | idealTree:nodemon: timing idealTree:node_modules/n[#####.............] - idealTree:nodemon: timing idealTree:node_modules/n[#####.............] - idealTree:nodemon: timing idealTree:node_modules/n[#####.............] - idealTree:nodemon: timing idealTree:node_modules/n[#####.............] - idealTree:nodemon: timing idealTree:node_modules/n[#####.............] - idealTree:nodemon: timing idealTree:node_modules/n[#####.............] - idealTree:nodemon: timing idealTree:node_modules/n[#####.............] - idealTree:nodemon: timing idealTree:node_modules/n[#####.............] - idealTree:nodemon: timing idealTree:node_modules/n[#####.............] | idealTree:nodemon: timing idealTree:node_modules/n[#####.............] | idealTree:nodemon: timing idealTree:node_modules/n[#####.............] | idealTree:nodemon: timing idealTree:node_modules/n[#####.............] | idealTree:nodemon: timing idealTree:node_modules/n[#####.............] | idealTree:nodemon: timing idealTree:node_modules/n[#####.............] / idealTree:nodemon: timing idealTree:node_modules/n[#####.............] / idealTree:nodemon: timing idealTree:node_modules/n[#####.............] / idealTree:nodemon: timing idealTree:node_modules/n[#####.............] / idealTree:nodemon: timing idealTree:node_modules/n[#######...........] | idealTree:send: timing idealTree:node_modules/send[#######...........] | idealTree:send: timing idealTree:node_modules/send[#######...........] | idealTree:send: timing idealTree:node_modules/send[#######...........] | idealTree:send: timing idealTree:node_modules/send[#######...........] | idealTree:send: timing idealTree:node_modules/send[#######...........] | idealTree:send: timing idealTree:node_modules/send[#########.........] | idealTree:simple-update-notifier: timing idealTree[#########.........] | idealTree:simple-update-notifier: timing idealTree[28979 ms] [23:45:59] Extension signature is verified: streetsidesoftware.code-spell-checker
+[29621 ms] [23:46:00] Extension signature is verified: dbaeumer.vscode-eslint
+[30579 ms] [23:46:01] Extracted extension to /home/node/.vscode-server/extensions/.db9c25d5-a0cf-43d9-85a4-2ff09b26bd29: dbaeumer.vscode-eslint
+[30643 ms] [23:46:01] Renamed to /home/node/.vscode-server/extensions/dbaeumer.vscode-eslint-2.4.2
+[#########.........] - reify:fsevents: sill reify mark deleted [ '/worksp[30693 ms] [23:46:01] Extracting extension completed. dbaeumer.vscode-eslint
+[#########.........] - reify:fsevents: sill reify mark deleted [ '/worksp[30742 ms] [23:46:01] Extension installed successfully: dbaeumer.vscode-eslint
+[#########.........] - reify:fsevents: sill reify mark deleted [ '/worksp[30800 ms] [23:46:01] Extension 'dbaeumer.vscode-eslint' v2.4.2 was successfully installed.
+[#########.........] - reify:fsevents: sill reify mark deleted [ '/worksp[#########.........] - reify:fsevents: sill reify mark deleted [ '/worksp[#########.........] - reify:fsevents: sill reify mark deleted [ '/worksp[#########.........] - reify:fsevents: sill reify mark deleted [ '/worksp[#########.........] - reify:fsevents: sill reify mark deleted [ '/worksp[#########.........] - reify:fsevents: sill reify mark deleted [ '/worksp[#########.........] \ reify:fsevents: sill reify mark deleted [ '/worksp[#########.........] / reify:fsevents: sill reify mark deleted [ '/worksp[#########.........] / reify:fsevents: sill reify mark deleted [ '/worksp[#########.........] \ reify:fsevents: sill reify mark deleted [ '/worksp[#########.........] \ reify:fsevents: sill reify mark deleted [ '/worksp[#########.........] \ reify:fsevents: sill reify mark deleted [ '/worksp[#########.........] \ reify:fsevents: sill reify mark deleted [ '/worksp[#########.........] \ reify:fsevents: sill reify mark deleted [ '/worksp[#########.........] \ reify:fsevents: sill reify mark deleted [ '/worksp[#########.........] \ reify:fsevents: sill reify mark deleted [ '/worksp[#########.........] \ reify:fsevents: sill reify mark deleted [ '/worksp[#########.........] / reify:is-extglob: timing reifyNode:node_modules/br[#########.........] / reify:is-extglob: timing reifyNode:node_modules/br[#########.........] / reify:is-extglob: timing reifyNode:node_modules/br[35695 ms] [23:46:06] Extracted extension to /home/node/.vscode-server/extensions/.f6d72911-6856-47b2-945f-d3caf362f476: streetsidesoftware.code-spell-checker
+[#########.........] / reify:is-extglob: timing reifyNode:node_modules/br[35728 ms] [23:46:06] Renamed to /home/node/.vscode-server/extensions/streetsidesoftware.code-spell-checker-2.20.5
+[35745 ms] [23:46:06] Extracting extension completed. streetsidesoftware.code-spell-checker
+[#########.........] / reify:is-extglob: timing reifyNode:node_modules/br[35781 ms] [23:46:06] Extension installed successfully: streetsidesoftware.code-spell-checker
+[35800 ms] [23:46:06] Extension 'streetsidesoftware.code-spell-checker' v2.20.5 was successfully installed.
+[#########.........] / reify:is-extglob: timing reifyNode:node_modules/br[#########.........] \ reify:is-glob: timing reifyNode:node_modules/inher[#########.........] \ reify:is-glob: timing reifyNode:node_modules/inher[#########.........] \ reify:is-glob: timing reifyNode:node_modules/inher[#########.........] \ reify:is-glob: timing reifyNode:node_modules/inher[#########.........] \ reify:is-glob: timing reifyNode:node_modules/inher[#########.........] \ reify:is-glob: timing reifyNode:node_modules/inher[#########.........] \ reify:is-glob: timing reifyNode:node_modules/inher[#########.........] \ reify:is-glob: timing reifyNode:node_modules/inher[#########.........] \ reify:is-glob: timing reifyNode:node_modules/inher[#########.........] \ reify:is-glob: timing reifyNode:node_modules/inher[#########.........] \ reify:is-glob: timing reifyNode:node_modules/inher[#########.........] \ reify:is-glob: timing reifyNode:node_modules/inher[#########.........] \ reify:is-glob: timing reifyNode:node_modules/inher[#########.........] \ reify:is-glob: timing reifyNode:node_modules/inher[#########.........] \ reify:is-glob: timing reifyNode:node_modules/inher[##########........] | reify:balanced-match: timing metavuln:packument:si[##########........] | reify:balanced-match: timing metavuln:packument:si[##########........] | reify:balanced-match: timing metavuln:packument:si[##########........] | reify:balanced-match: timing metavuln:packument:si[##########........] | reify:balanced-match: timing metavuln:packument:si[##########........] | reify:balanced-match: timing metavuln:packument:si[##########........] | reify:balanced-match: timing metavuln:packument:si[##########........] | reify:balanced-match: timing metavuln:packument:si[##########........] - reify:media-typer: http fetch GET 200 https://regi[##########........] \ reify:to-regex-range: http fetch GET 200 https://r[##########........] \ reify:to-regex-range: http fetch GET 200 https://r[##########........] \ reify:to-regex-range: http fetch GET 200 https://r[##########........] \ reify:to-regex-range: http fetch GET 200 https://r[##########........] \ reify:to-regex-range: http fetch GET 200 https://r[##########........] / reify:forwarded: http fetch GET 200 https://regist[###########.......] | reify:ignore-by-default: http fetch GET 200 https:[###########.......] | reify:ignore-by-default: http fetch GET 200 https:[###########.......] | reify:ignore-by-default: http fetch GET 200 https:[###########.......] | reify:ignore-by-default: http fetch GET 200 https:[###########.......] | reify:ignore-by-default: http fetch GET 200 https:[###########.......] / reify:ignore-by-default: http fetch GET 200 https:[###########.......] \ reify:binary-extensions: timing reifyNode:node_mod[############......] - reify:destroy: http fetch GET 200 https://registry[############......] - reify:ms: http fetch GET 200 https://registry.npmj[############......] / reify:toidentifier: http fetch GET 200 https://reg[############......] / reify:anymatch: http fetch GET 200 https://registr[############......] | reify:methods: http fetch GET 200 https://registry[############......] | reify:methods: http fetch GET 200 https://registry[#############.....] - reify:bytes: http fetch GET 200 https://registry.n[#############.....] - reify:fresh: http fetch GET 200 https://registry.n[##############....] \ reify:function-bind: http fetch GET 200 https://re[##############....] - reify:escape-html: http fetch GET 200 https://regi[###############...] \ reify:undefsafe: timing reifyNode:node_modules/coo[###############...] | reify:undefsafe: timing reifyNode:node_modules/coo[################..] \ reify:ms: http fetch GET 200 https://registry.npmj[################..] | reify:encodeurl: http fetch GET 200 https://regist[################..] | reify:depd: timing reifyNode:node_modules/braces C[################..] | reify:depd: timing reifyNode:node_modules/braces C[#################.] / reify:ms: http fetch GET 200 https://registry.npmj[#################.] | reify:has-symbols: timing metavuln:calculate:secur[#################.] - reify:has-symbols: timing metavuln:calculate:secur[#################.] | reify:chokidar: timing metavuln:load:security-advi[#################.] / reify:debug: http fetch GET 200 https://registry.n[#################.] / reify:simple-update-notifier: timing reifyNode:nod[#################.] / reify:simple-update-notifier: timing reifyNode:nod[#################.] \ reify:body-parser: http fetch GET 200 https://regi[#################.] \ reify:body-parser: http fetch GET 200 https://regi[#################.] | reify:debug: timing reifyNode:node_modules/body-pa[#################.] | reify:debug: timing reifyNode:node_modules/body-pa[#################.] | reify:debug: timing reifyNode:node_modules/body-pa[#################.] - reify:mime-db: http fetch GET 200 https://registry[#################.] - reify:mime-db: http fetch GET 200 https://registry[#################.] - reify:mime-db: http fetch GET 200 https://registry[#################.] - reify:mime-db: http fetch GET 200 https://registry[#################.] - reify:mime-db: http fetch GET 200 https://registry[#################.] - reify:mime-db: http fetch GET 200 https://registry[#################.] \ reify:mime-db: http fetch GET 200 https://registry[##################] | reify:express: http fetch GET 200 https://registry[##################] | reify:express: http fetch GET 200 https://registry[##################] | reify:express: http fetch GET 200 https://registry[##################] | reify:express: http fetch GET 200 https://registry[##################] | reify:express: http fetch GET 200 https://registry[##################] / reify:express: http fetch GET 200 https://registry[##################] | reify:object-inspect: http fetch GET 200 https://r[##################] | reify:object-inspect: http fetch GET 200 https://r[##################] | reify:object-inspect: http fetch GET 200 https://r[##################] | reify:object-inspect: http fetch GET 200 https://r[##################] | reify:object-inspect: http fetch GET 200 https://r[##################] | reify:object-inspect: http fetch GET 200 https://r[##################] / reify:object-inspect: http fetch GET 200 https://r[##################] / reify:object-inspect: http fetch GET 200 https://r[##################] | reify:semver: http fetch GET 200 https://registry.[##################] | reify:semver: http fetch GET 200 https://registry.[##################] | reify:semver: http fetch GET 200 https://registry.[##################] | reify:semver: http fetch GET 200 https://registry.[##################] | reify:semver: http fetch GET 200 https://registry.[##################] | reify:semver: http fetch GET 200 https://registry.[##################] | reify:semver: http fetch GET 200 https://registry.[##################] | reify:nodemon: http fetch GET 200 https://registry[##################] | reify:nodemon: http fetch GET 200 https://registry[##################] | reify:nodemon: http fetch GET 200 https://registry[##################] / reify:nodemon: http fetch GET 200 https://registry[##################] / reify:nodemon: http fetch GET 200 https://registry[##################] / reify:nodemon: http fetch GET 200 https://registry[##################] \ reify:nodemon: http fetch GET 200 https://registry[##################] | reify:nodemon: http fetch GET 200 https://registry[##################] | reify:nodemon: http fetch GET 200 https://registry[##################] | reify:nodemon: http fetch GET 200 https://registry[##################] / reify:nodemon: http fetch GET 200 https://registry
+
+added 90 packages, and audited 91 packages in 27s
+
+11 packages are looking for funding
+  run `npm fund` for details
+
+3 moderate severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm notice 
+npm notice New minor version of npm available! 9.5.1 -> 9.8.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v9.8.0
+npm notice Run npm install -g npm@9.8.0 to update!
+npm notice 
+[43866 ms] Start: Run in container: # Test for /home/node/.gitconfig and git
+[43901 ms] 
+[43902 ms] 
+[43902 ms] Start: Run in container: # Copy /Users/robin/.gitconfig to /home/node/.gitconfig
+[43926 ms] 
+[43926 ms] 
+[43928 ms] Start: Run in container: command -v git >/dev/null 2>&1 && git config --global --replace-all credential.helper '!f() { /home/node/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node /tmp/vscode-remote-containers-51c76749-1cd9-4453-af18-fba109cd8dc9.js git-credential-helper $*; }; f' || true
+[43938 ms] 
+[43939 ms] 
+[43939 ms] Start: Run in container: git config --global --add safe.directory '/workspaces/dev02-sue'
+[43948 ms] 
+[43948 ms] 
+[52373 ms] Start: Run in container: cat /proc/552/environ
+[142675 ms] Port forwarding connection from 61974 > 42721 > 42721 in the container.
+[142676 ms] Start: Run in container: /home/node/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node -e 
+[142681 ms] Port forwarding connection from 61975 > 42721 > 42721 in the container.
+[142681 ms] Start: Run in container: /home/node/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node -e 
+[146031 ms] Port forwarding 61975 > 42721 > 42721 stderr: Connection established
+[146295 ms] Port forwarding 61974 > 42721 > 42721 stderr: Connection established
+[151382 ms] Port forwarding 61974 > 42721 > 42721 stderr: Remote close
+[151417 ms] Port forwarding 61974 > 42721 > 42721 terminated with code 0 and signal null.
+[151420 ms] Port forwarding 61974 > 42721 > 42721: Local close
+[227339 ms] Port forwarding 61975 > 42721 > 42721 stderr: Remote close
+[227362 ms] Port forwarding 61975 > 42721 > 42721 terminated with code 0 and signal null.
+[227363 ms] Port forwarding 61975 > 42721 > 42721: Local close
