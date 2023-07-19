@@ -50,14 +50,8 @@
   RUN  cd             "/workspaces/FRApps/client1" && npm install 
                                                               
 # RUN  mkdir  -p      "/workspaces/FRApps/server1"
-  COPY server1        "/workspaces/FRApps/server1
-  RUN  cd             "/workspaces/FRApps/server1" && npm install 
-
-  COPY server2        "/workspaces/FRApps/server2
-  RUN  cd             "/workspaces/FRApps/server2" && npm install 
-
-  COPY server3        "/workspaces/FRApps/server3
-  RUN  cd             "/workspaces/FRApps/server3" && npm install 
+# COPY server1        "/workspaces/FRApps/server1
+# RUN  cd             "/workspaces/FRApps/server1" && npm install 
 
 # RUN  mkdir  -p      "/workspaces/FRTools/"
   COPY ._2            "/workspaces/FRTools/._2"
