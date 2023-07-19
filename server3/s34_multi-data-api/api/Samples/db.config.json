@@ -1,0 +1,64 @@
+
+{ "MySQL_AWS_IO": {
+
+    "HOST"     : "13.57.57.151",
+    "USER"     : "io",
+    "PASSWORD" : "IO.usr216",
+    "DB"       : "io",
+    "DIALECT"  : "mysql"
+    }
+
+, "MySQL_AWS_FORMR": {
+
+    "HOST"     : "13.57.57.151",
+    "USER"     : "io",
+    "PASSWORD" : "IO.usr216",
+    "DB"       : "formr",
+    "DIALECT"  : "mysql"
+    }
+
+, "MySQL_LOCAL_RAUTH" : {
+
+    "HOST"     : "localhost",
+    "USER"     : "root",
+    "PASSWORD" : "FormR!1234",
+    "DB"       : "rauth",
+    "DIALECT"  : "mysql",
+    "POOL": {
+      "max"    : 5,
+      "min"    : 0,
+      "acquire": 30000,
+      "idle"   : 10000
+      }
+    }
+
+, "MySQL_VULTR_IO": {
+
+    "HOST"     : "45.32.219.121",
+    "USER"     : "admin",
+    "PASSWORD" : "Washington!12345",
+    "DB"       : "formr",
+    "DIALECT"  : "mysql"
+    }
+
+, "MSSQL_Azure_IO": {
+
+    "HOST"     : "sc203d-azn3.database.windows.net" ,
+    "USER"     : "sco" ,
+    "PASSWORD" : "Azn.ani000" ,
+    "DB"       : "IO" ,
+    "DIALECT"  : "mssql" ,
+    "DIALECTOPTIONS": {
+      "options": {
+        "encrypt": true,
+        "validateBulkLoadParameters": false
+        }
+      } ,
+    "POOL": {
+      "max"    : 5,
+      "min"    : 0,
+      "acquire": 30000,
+      "idle"   : 10000
+      }
+    }
+}
