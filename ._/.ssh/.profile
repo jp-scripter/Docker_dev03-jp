@@ -32,4 +32,11 @@ if [  -d "/home/._0/bin" ] ; then
 fi
 
 # set the Server Identity 
-THE_SERVER="fr231d_ub20_FRApps-Dev01 (127.0.0.1)"
+export  THE_SERVER="fr231d_ub20-FRApps-Dev01 (127.0.0.1)"
+
+# set Node Vesion
+export  NVS_HOME="/home/._0/.nvs"
+source $NVS_HOME/nvs.sh 18 
+
+export  PATH
+ 
