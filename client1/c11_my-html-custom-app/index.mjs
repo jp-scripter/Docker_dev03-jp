@@ -9,17 +9,23 @@
    import express from 'express';
 
 // Constants
-const PORT = 3001;
-const HOST = '0.0.0.0';
+     const  aPORT           =  3001;
+     const  aHOST           = 'localhost'                           // .(30717.01.1 Was: '0.0.0.0')
+     const  aURI            =  import.meta.url;                     // console.log( "aURI", aURI ); process.exit()
+     const  aOS             = (typeof(process) != 'undefined' ) ? (`${process.argv[1]}`.match( /^[a-z]:/i ) ? 'windows' : 'linux' ) : 'browser'
+     const  __filename      =  aURI.replace( /^.+\//, "" )
+     const  __dirname       =  aURI.replace( `/${__filename}`, '' ).replace( 'file:///', aOS == 'linux' ? '/' : '')  // .(30322.05.1 RAM Put '/' back in)
 
-// App
-const app = express();
-app.get('/', (req, res) => {
-//  res.send('Hello remote world index.mjs from VSCode!\n');
-    res.send('Hello remote world in index.mjs from TextPad!\n');
+     const  pApp            =  express();
 
+            pApp.use( express.static( 'library/3_bonus/' ) );
+
+            pApp.get('/', ( pReq, pRes ) => {
+//          pRes.send('Hello remote world index.mjs from VSCode!\n');
+//          pRes.send('Hello remote world in index.mjs from TextPad!\n');
+            pRes.sendFile( `${__dirname}/library/3_bonus/index.html` )
 });
 
-  app.listen(PORT, HOST);
+            pApp.listen( aPORT, aHOST );
 
-  console.log(`Running on http://${HOST}:${PORT}`);
+            console.log( `Running on http://${aHOST}:${aPORT}` );
