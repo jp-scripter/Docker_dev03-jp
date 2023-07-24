@@ -1,6 +1,6 @@
 #!/bin/bash
 
-  if [ ! -d "/home/._0/bin"           ]; then mkdir -p "/home/._0/bin"; fi; chown nimda "/home/._0/"; chmod 755 "/home/._0/";
+  if [ ! -d "/home/._0/bin"           ]; then mkdir -p "/home/._0/bin"; chown nimda "/home/._0/"; chmod 755 "/home/._0/";  fi
 
 # if [ ! -d "/home/nimda"             ]; then cp -r "._/.ssh/.profile" /home/nimda;
 #                                             cp -r "._/.ssh/FRApps.Docker@fr231d_nimda_a230716_key.pub" /home/nimda/.ssh/.; fi
@@ -11,7 +11,8 @@
 # if [ ! -d "/workspaces/FRTools/._2" ]; then cp -r  ._2/*  /workspaces/FRTools/._2; fi
 
 #        cd "/workspaces/FRTools"  # /workspaces/FRTools/._2
-         aDir="/workspaces/FRTools/._2"
+#        aDir="/workspaces/FRTools/._2"
+         aDir="/workspaces/._2"
 
   if [ ! -L "/home/._0/bin/rss"     ]; then   ln -s "${aDir}/JPTs/RSS/RSS01_Main1.sh"             "/home/._0/bin/rss";     fi
   if [ ! -L "/home/._0/bin/rdir"    ]; then   ln -s "${aDir}/JPTs/RSS/FileList/RSS21_FileList.sh" "/home/._0/bin/rdir";    fi
